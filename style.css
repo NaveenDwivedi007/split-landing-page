@@ -187,11 +187,9 @@ h1{
 }
 .container.hover-left .split.left{
   width: 100%;
-  transition: width 1.5s ease;
 }
 .container.hover-right .split.right{
   width: 100%;
-  transition: width 1.5s ease;
 }
 .container.hover-left .btn:hover{
   background-color: var(--left-btn-hover-color);
@@ -200,4 +198,7 @@ h1{
 .container.hover-right .btn:hover{
   background-color: var(--right-btn-hover-color);
   border-color:var(--right-btn-hover-color) ;
+}
+.split.left , .split.right , .split.left::before , .split.right::after{
+  transition: width 1.5s ease;
 }
